@@ -4,3 +4,17 @@ body {
   max-width: 38rem;
   padding: 2rem;
 }
+
+#holder{
+  font-size:50px;
+  height:400px;
+  width:400px;
+  text-align: center;
+  line-height: 400px;
+  font-weight: bold;
+  background-color: pink;
+}
+
+#wrap{
+  list-style: none;
+}
