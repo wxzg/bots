@@ -1,0 +1,64 @@
+{
+    "product": {
+        "id": 6554792230964,
+        "gid": "gid:\/\/shopify\/Product\/6554792230964",
+        "vendor": "ADIDAS",
+        "type": "FOOTWEAR",
+        "variants": [{
+            "id": 39319314726964,
+            "price": 6500,
+            "name": "W's Nizza Platform (Black | White) - 5.5",
+            "public_title": "5.5",
+            "sku": "30168054"
+        }, {
+            "id": 39319314759732,
+            "price": 6500,
+            "name": "W's Nizza Platform (Black | White) - 6.5",
+            "public_title": "6.5",
+            "sku": "30168055"
+        }, {
+            "id": 39319314792500,
+            "price": 6500,
+            "name": "W's Nizza Platform (Black | White) - 7",
+            "public_title": "7",
+            "sku": "30168056"
+        }, {
+            "id": 39319314825268,
+            "price": 6500,
+            "name": "W's Nizza Platform (Black | White) - 7.5",
+            "public_title": "7.5",
+            "sku": "30168057"
+        }, {
+            "id": 39319314858036,
+            "price": 6500,
+            "name": "W's Nizza Platform (Black | White) - 8",
+            "public_title": "8",
+            "sku": "30168058"
+        }, {
+            "id": 39319314890804,
+            "price": 6500,
+            "name": "W's Nizza Platform (Black | White) - 8.5",
+            "public_title": "8.5",
+            "sku": "30168059"
+        }, {
+            "id": 39319314923572,
+            "price": 6500,
+            "name": "W's Nizza Platform (Black | White) - 9",
+            "public_title": "9",
+            "sku": "30168060"
+        }, {
+            "id": 39319314956340,
+            "price": 6500,
+            "name": "W's Nizza Platform (Black | White) - 10",
+            "public_title": "10",
+            "sku": "30168061"
+        }]
+    },
+    "page": {
+        "pageType": "product",
+        "resourceType": "product",
+        "resourceId": 6554792230964
+    },
+    "page_view_event_id": "e39e7361f66ce35411bee7b825b3855311c2d63cd3a84252de25fde3119c3db3",
+    "cart_event_id": "7cdcac24de23e66a944316019c4853f2eb297579bdd28a50000b0a06aa000782"
+}
