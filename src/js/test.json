@@ -1,64 +1,103 @@
 {
-    "product": {
-        "id": 6554792230964,
-        "gid": "gid:\/\/shopify\/Product\/6554792230964",
-        "vendor": "ADIDAS",
-        "type": "FOOTWEAR",
-        "variants": [{
-            "id": 39319314726964,
-            "price": 6500,
-            "name": "W's Nizza Platform (Black | White) - 5.5",
-            "public_title": "5.5",
-            "sku": "30168054"
-        }, {
-            "id": 39319314759732,
-            "price": 6500,
-            "name": "W's Nizza Platform (Black | White) - 6.5",
-            "public_title": "6.5",
-            "sku": "30168055"
-        }, {
-            "id": 39319314792500,
-            "price": 6500,
-            "name": "W's Nizza Platform (Black | White) - 7",
-            "public_title": "7",
-            "sku": "30168056"
-        }, {
-            "id": 39319314825268,
-            "price": 6500,
-            "name": "W's Nizza Platform (Black | White) - 7.5",
-            "public_title": "7.5",
-            "sku": "30168057"
-        }, {
-            "id": 39319314858036,
-            "price": 6500,
-            "name": "W's Nizza Platform (Black | White) - 8",
-            "public_title": "8",
-            "sku": "30168058"
-        }, {
-            "id": 39319314890804,
-            "price": 6500,
-            "name": "W's Nizza Platform (Black | White) - 8.5",
-            "public_title": "8.5",
-            "sku": "30168059"
-        }, {
-            "id": 39319314923572,
-            "price": 6500,
-            "name": "W's Nizza Platform (Black | White) - 9",
-            "public_title": "9",
-            "sku": "30168060"
-        }, {
-            "id": 39319314956340,
-            "price": 6500,
-            "name": "W's Nizza Platform (Black | White) - 10",
-            "public_title": "10",
-            "sku": "30168061"
-        }]
+    "URL": "https://www.yeezysupply.com/api/checkout/customer/baskets",
+    "basketId": "1ddf19bda5a3b9c420d10334aa",
+    "currency": "USD",
+    "modifiedDate": "2021-07-06T13:43:21.027Z",
+    "pricing": {
+        "total": 228,
+        "baseTotal": 228,
+        "totalTax": 0,
+        "productTotal": 220,
+        "productTotalBeforeDiscounts": 220,
+        "productTotalBeforeOrderDiscounts": 220,
+        "shippingTotal": 8,
+        "shippingBaseTotal": 8
     },
-    "page": {
-        "pageType": "product",
-        "resourceType": "product",
-        "resourceId": 6554792230964
+    "resourceState": "f010afb2e6175fbf2b23ab9620cf0830bad229848be682d73aac71339acc151d",
+    "taxationPolicy": "net",
+    "totalProductCount": 1,
+    "messageList": [{
+        "type": "PaymentMethodRequired"
+    }],
+    "shipmentList": [{
+        "shipmentId": "me",
+        "shipmentType": "inline",
+        "productLineItemList": [{
+            "itemId": "0df161e7ee8be56e54c7751239",
+            "productId": "GZ0711_620",
+            "productName": "YEEZY BOOST 700 MNVN",
+            "category": "YS Master Product Catalog",
+            "canonicalProductName": "yeezy-boost-700-mnvn",
+            "productImage": "https://assets.yeezysupply.com/images/w_280,h_280,f_auto,q_auto:sensitive/10f2ef8e33674fbbbc3cad5001295071_ce49/GZ0711_620_GZ0711_04_standard.png",
+            "quantity": 1,
+            "pricing": {
+                "baseUnitPrice": 220,
+                "unitPrice": 220,
+                "basePrice": 220,
+                "price": 220,
+                "priceAfterAllDiscounts": 220,
+                "unitPriceWithoutTax": 220
+            },
+            "gender": "Men",
+            "color": "BLUE TINT",
+            "size": "8.5",
+            "allowedActions": {
+                "delete": true,
+                "edit": false,
+                "moveToWishlist": false
+            },
+            "maxQuantityAllowed": 2,
+            "isBonusProduct": false,
+            "productType": "FOOTWEAR",
+            "availableStock": 11,
+            "isFlashProduct": true,
+            "specialLaunchProduct": false
+        }],
+        "shippingLineItem": {
+            "name": "Shipping",
+            "description": "4-8 Day Delivery",
+            "id": "2ndDay-1",
+            "pricing": {
+                "basePrice": 8,
+                "price": 8
+            },
+            "carrierServiceName": "Fed Ex",
+            "freeShippingThresholdMin": 30,
+            "freeShippingThresholdMax": 50000
+        },
+        "shippingOnDate": ""
+    }],
+    "shippingAddress": {
+        "address1": "aPT101",
+        "city": "ANCHORAGE",
+        "country": "US",
+        "firstName": "cHENNY",
+        "id": "f16af070cc6cb45907c0608f2d",
+        "lastName": "zHU",
+        "phoneNumber": "13186866563",
+        "zipcode": "99508",
+        "stateCode": "AK"
     },
-    "page_view_event_id": "e39e7361f66ce35411bee7b825b3855311c2d63cd3a84252de25fde3119c3db3",
-    "cart_event_id": "7cdcac24de23e66a944316019c4853f2eb297579bdd28a50000b0a06aa000782"
+    "billingAddress": {
+        "address1": "aPT101",
+        "city": "ANCHORAGE",
+        "country": "US",
+        "firstName": "cHENNY",
+        "id": "a477c7d56daf1f04a898e5f9d1",
+        "lastName": "zHU",
+        "phoneNumber": "13186866563",
+        "zipcode": "99508",
+        "stateCode": "AK"
+    },
+    "customer": {
+        "customerId": "abAUHZELh01HiulXllpaF5RuIP",
+        "email": "598449069@QQ.COM",
+        "encryptedEmail": "8IsjWyaXUi210IeMqmfZxYbJlUXrWzgggKmjnFG8354=",
+        "receiveSmsUpdates": false,
+        "isLoggedIn": false
+    },
+    "newsletterSubscription": true,
+    "taxCalculationMissing": false,
+    "freeShippingThreshold": 49780
 }
+

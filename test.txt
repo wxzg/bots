@@ -1,0 +1,61 @@
+{
+    "URL": "https://www.yeezysupply.com/api/checkout/baskets/1ddf19bda5a3b9c420d10334aa/shipping_methods array",
+    "id": "2ndDay-1",
+    "type": ["inline"],
+    "shipmentId": "me",
+    "name": "Shipping",
+    "price": 8,
+    "description": "4-8 Day Delivery",
+    "isDefault": true,
+    "unavailableDueToCustomerGroup": false,
+    "maxBusinessTransitDays": 3,
+    "carrierName": "Fed Ex",`
+    "shippingType": "home"
+}
+
+{
+    "url":"https://www.yeezysupply.com/api/checkout/baskets/1ddf19bda5a3b9c420d10334aa/payment_methods"
+    "paymentMethods": [{
+        "id": "CREDIT_CARD",
+        "name": "credit/debit card",
+        "description": "<p><strong>thank you for your payment</strong></p>\n",
+        "cards": [{
+            "cardType": "AMEX",
+            "name": "American Express",
+            "checksumVerificationEnabled": true,
+            "numberLengthList": ["15"],
+            "numberPrefixes": ["34", "37"],
+            "securityCodeLength": 4
+        }, {
+            "cardType": "DISCOVER",
+            "name": "DISCOVER",
+            "checksumVerificationEnabled": true,
+            "numberLengthList": ["15"],
+            "numberPrefixes": ["34", "37"],
+            "securityCodeLength": 3
+        }, {
+            "cardType": "MASTER",
+            "name": "Master Card",
+            "checksumVerificationEnabled": true,
+            "numberLengthList": ["16"],
+            "numberPrefixes": ["51-55"],
+            "securityCodeLength": 3
+        }, {
+            "cardType": "VISA",
+            "name": "VISA",
+            "checksumVerificationEnabled": true,
+            "numberLengthList": ["16"],
+            "numberPrefixes": ["51-55"],
+            "securityCodeLength": 3
+        }, {
+            "cardType": "Diners",
+            "name": "Diners Club ",
+            "checksumVerificationEnabled": true,
+            "numberLengthList": ["14-15"],
+            "numberPrefixes": ["36"],
+            "securityCodeLength": 3
+        }],
+        "paymentProcessor": "adyen",
+        "async": false
+    }]
+}
