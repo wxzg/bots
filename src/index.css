@@ -3,10 +3,25 @@
   padding:0;
 }
 
+ul{
+  list-style: none;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-#wrap{
-  list-style: none;
+#desktop-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+#desktop-wrap #desktop-side{
+  text-align: center;
+}
+
+#desktop-wrap #desktop-side .desktop-icon{
+  width: 34px;
+  height:34px;
+  cursor: pointer;
 }

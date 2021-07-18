@@ -8,10 +8,26 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-<div class="container">
+<div id="desktop-wrap">
 
-  <div class="row">
-    <div class="col-lg-4">
+  <div id="desktop-side">
+    <div  >
+      <ul>
+        <li>
+          <img class="desktop-icon" src="../static/images/task_after.png"/>
+        </li>
+        <li>
+          <img class="desktop-icon" src="../static/images/proxy_after.png"/>
+        </li>
+        <li>
+          <img class="desktop-icon" />
+        </li>
+        <li>
+          <img class="desktop-icon" />
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-side-right">
       <ul>
         <li>
           <span>Dashboard</span>
@@ -27,14 +43,46 @@
         </li>
       </ul>
     </div>
-    <div class="col-lg-8" >
-      <h2>Dashboard</h2>
-    </div>
   </div>
+    <div >
+      <h2>Dashboard</h2>
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td><button type="button" class="btn btn-success" id="monitorBtn">开始监听</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
 </div>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Promise,Symbol,Object.setPrototypeOf,Object.getOwnPropertySymbols,Set"></script>
     <script src="./js/render.js"></script>
     <script src="./js/ubiq.js"></script>
+    <!-- <script src="./js/monitor.js"></script> -->
+    <script src="./js/kith.js"></script>
   </body>
 </html>

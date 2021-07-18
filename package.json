@@ -42,11 +42,15 @@
     }
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "axios-https-proxy-fix": "^0.17.1",
     "cheerio": "^1.0.0-rc.10",
     "electron-squirrel-startup": "^1.0.0",
+    "puppeteer": "^10.1.0",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "superagent": "^6.1.0"
+    "superagent": "^6.1.0",
+    "tunnel": "0.0.6"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.57",
