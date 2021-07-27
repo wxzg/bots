@@ -144,14 +144,62 @@ pool.connect().then(client => {
 })
 ```
 
-## 3.页面监听 monitor
+### 3.页面监听 monitor
 
 通过一定的时间间隔来不间断的请求目标页面，通过比较前后两次页面内容来确定是否发生变化完成监听
 
 ```javascript
-const axios   = require('axi')
-const $       = require('cheerio'); //解析传入的DOM字符串，语法同jQuery 
+const request = require('request-promise')
+const cheerio = require('cheerio')
+
+async function check() {
+    const options = {
+        url: 'https://notify.express',
+        method: 'GET'
+    }
+
+
+    return request(options).then(response => {
+        const $     = cheerio.load(response)
+        const title = $("title").text()
+        return title
+    }).catch(error => {
+        console.log(`Error! We received a bad response code or what could be a more serious error (No internet, bad proxy etc)`)
+        console.log(`Error message: ${error.message}`)
+        return
+    })
+}
+
+function findChange() {
+    let last_title = false
+
+    setInterval(async function() {
+        let latest_title = await check()
+
+        if (latest_title && latest_title != last_title) {
+            if (!last_title) {
+                console.log("This is the first iteration. Finding what the title is.")
+            } else {
+                // We could do something cool in here like send a discord webhook or move onto the next stage of our bot
+                console.log(`The title of the webpage has changed, it's now: "${latest_title}"`)
+            }
+        } else if (last_title == latest_title) {
+            console.log(`The title of the webpage is still the same. No change has been detected. it's still: "${latest_title}"`)
+        } else {
+            return console.log("There was probably a server error! Not updating the title.")
+        }
+
+        // Redefining the variable as the most up-to-date title everytime except where we don't want to
+        last_title = latest_title
+    }, 1500)
+}
+
+findChange()
 ```
+
+### 4.puppeteer
+
+
 
 ## 额外补充
 

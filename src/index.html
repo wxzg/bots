@@ -7,74 +7,83 @@
     <link rel="stylesheet" href="../static/bootstarp/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="index.css">
   </head>
-  <body>
+  <body >
 <div id="desktop-wrap">
 
-  <div id="desktop-side">
-    <div  >
-      <ul>
+    <!-- 左侧导航栏 -->
+    <div id="desktop-side">
+      <div id="logo">MiCop</div>
+      <ul class="desktop-side-ul">
         <li>
-          <img class="desktop-icon" src="../static/images/task_after.png"/>
+          <img class="side-image" src="../static/images/task.svg" alt="task" style="width:30px;height:30px;">
         </li>
+
         <li>
-          <img class="desktop-icon" src="../static/images/proxy_after.png"/>
+          <img class="side-image" src="../static/images/profile.svg" alt="task" style="width:28px;height:28px;">
         </li>
+
         <li>
-          <img class="desktop-icon" />
+          <img class="side-image" src="../static/images/wifi.svg" alt="task">
         </li>
+
         <li>
-          <img class="desktop-icon" />
+          <img class="side-image" src="../static/images/user.svg" alt="task" style="width:25px;height:25px;">
         </li>
-      </ul>
-    </div>
-    <div class="desktop-side-right">
-      <ul>
+
         <li>
-          <span>Dashboard</span>
-        </li>
-        <li>
-          <span>Profile</span>
-        </li>
-        <li>
-          <span>NewTask</span>
-        </li>
-        <li>
-          <span>Proxies</span>
+          <img class="side-image" src="../static/images/statistics.svg" alt="task" style="width:30px;height:30px;">
         </li>
       </ul>
+      <div class="side-bottom">
+        <div class="setting">
+          <img class="side-image" src="../static/images/setting.svg" alt="task" style="width:28px;height:28px;">
+        </div>
+        <div class="userinfo" style="width:30px;height:30px;">
+          <img class="side-image" src="../static/images/pig.svg" alt="task" >
+        </div>
+      </div>
     </div>
-  </div>
-    <div >
-      <h2>Dashboard</h2>
-      <table class="table table-hover table-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td><button type="button" class="btn btn-success" id="monitorBtn">开始监听</button></td>
-          </tr>
-        </tbody>
-      </table>
+
+    <div id="desktop-right">
+      <!-- 标题栏 -->
+      <header class="desktop-header">
+        <div class="header-title">
+          <span class="title">Tasks</span>
+          <span class="total">(0/0)Total</span>
+        </div>
+        <div class="searchipt">
+          <input type="text" placeholder="Search"/>
+        </div>
+        <div class="header-btn">
+          <button class="import-btn">Import</button>
+          <button class="export-btn">Export</button>
+        </div>
+        <div class="header-rightset">
+          <div class="notification">
+            <img class="side-image" src="../static/images/information.svg" alt="task">
+          </div>
+          <div class="header-icon-wrap">
+            <i class="min-win win-icon" style="background-color: #BBA5AD;"></i>
+            <i class="close-win win-icon" style="margin-left: 6px; background-color: #DE4D59;"></i>
+          </div>
+        </div>
+      </header>
+      <!-- 任务界面 -->
+      <div id="task-page" class="side-right">
+
+      </div>
+
+      <footer class="desktop-footer">
+        <div class="footer-version">
+          <i class="win-icon" style="margin:0 8px; background-color: #DE4D59;"></i>
+          <span>License Authenticated</span>
+          <span class="version">v0.0.1</span>
+        </div>
+        <div class="footer-autosolve">
+          <i class="win-icon" style="margin:0 8px; background-color: #DE4D59;"></i>
+          <span>AYCD Autosolve Connected</span>
+        </div>
+      </footer>
     </div>
 
 </div>

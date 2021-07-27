@@ -17,7 +17,7 @@ async function testPuppeteer(){
     return variants.find((variant) => variant.name.endsWith(sizeStr)).id;
     }, 7);
 
-    
+
 }
 
-testPuppeteer()
+// testPuppeteer()
