@@ -8,6 +8,7 @@ ul{
   list-style: none;
 }
 
+
 .win-icon{
   width:12px;
   height:12px;
@@ -55,6 +56,11 @@ body {
 
 #desktop-side .desktop-side-ul li{
   margin:20px 0;
+  background-color: #E198AC;
+}
+
+#desktop-side .desktop-side-ul li:hover{
+  opacity: 0.7;
 }
 
 #desktop-side .side-bottom{
@@ -93,10 +99,6 @@ body {
   padding:20px;
 }
 
-/* 任务模块界面 */
-#desktop-right #task-page{
-  flex:1;
-}
 
 /* 窗口标题栏设置 */
 #desktop-right .desktop-header{
@@ -114,14 +116,14 @@ body {
   display: inline-block;
   font-size:30px;
   color:#F885A3;
-  margin-left:28px;
+  margin-left:10px;
   vertical-align: middle;
 }
 
 #desktop-right .desktop-header .header-title .total{
   display: inline-block;
   font-size:20px;
-  margin-left:6px;
+  margin-left:3px;
   vertical-align: middle;
 }
 
@@ -179,9 +181,9 @@ body {
 
 #desktop-right .desktop-header .header-rightset .header-icon-wrap{
   padding:0 12px;
-  border-left:1px solid rgb(58, 58, 58);
-  height: 28px;
-  line-height: 28px;
+  border-left:1px solid rgb(78, 78, 78);
+  height: 24px;
+  line-height: 24px;
   margin-left:12px;
   margin-right:15px;
 }
@@ -210,12 +212,164 @@ body {
 }
 
 #desktop-right .desktop-footer .footer-version .version{
- padding: 0 8px;
- margin-left:8px;
- border-left:1px solid rgb(80, 80, 80);
- display:inline-block;
- height:18px;
- line-height: 18px;
+  padding: 0 8px;
+  margin-left:8px;
+  border-left:1px solid rgb(80, 80, 80);
+  display:inline-block;
+  height:16px;
+  line-height: 16px;
 }
 
+/* 任务模块界面 */
+
+#desktop-right #task-page{
+  flex:1;
+  display:flex;
+}
+
+#desktop-right #task-page .task-state{
+  width:180px;
+  height:100%;
+  background-color: #FFDFE4;
+}
+
+#desktop-right #task-page .task-interface{
+  flex:1;
+  height:100%;
+  background-color: #FFDFE4;
+  display: flex;
+  flex-direction: column;
+}
+
+#desktop-right #task-page .task-interface .task-interface-pagewrap{
+  height:8%;
+  background-color: #FEF4F5;
+  width: 100%;
+}
+
+#desktop-right #task-page .task-interface .task-page{
+  flex:1;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  width:100%;
+}
+
+#desktop-right #task-page .task-interface .task-page .no-task{
+  color:#C7A2AC;
+  font-size:15px;
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 底部功能模块栏 */
+
+#desktop-right .function-bottom{
+  color:#C7A2AC;
+  background-color:#FFDFE4;
+  height:50px;
+  width:100%;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#desktop-right .function-bottom .function-icon{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  position: absolute;
+  top:-5px; 
+}
+
+
+
+#desktop-right .function-bottom .function-icon .function-icon-circle{
+  width:52px;
+  height:52px;
+  background-color: #FEEBEF;
+  border-radius: 50%;
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-left:-26px;
+  margin-top:-26px;
+}
+
+
+#desktop-right .function-bottom .function-icon .function-icon-circle img{
+  position: absolute;
+  left:50%;
+  margin-left: -15px;
+  top:50%;
+  margin-top:-15px;
+  width:30px;
+  height:30px;
+}
+
+#desktop-right .function-bottom .function-bottom-captcha{
+  text-align: center;
+  height:32px;
+  line-height:32px;
+  background-color:#FEEEF1;
+  font-size:14px;
+  color:#C7A2AC;
+  margin-left:15px;
+  margin-right:15px;
+  width:150px;
+  border-radius: 5px;
+  border:none;
+  outline: none;
+  font-size:14px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#desktop-right .function-bottom .function-bottom-captcha .captcha-state{
+  width:14px;
+  height:14px;
+  border-radius: 50%;
+  background-color: #F6941E;
+  position: relative;
+  margin-right:5px;
+}
+
+#desktop-right .function-bottom .function-bottom-captcha .captcha-state div{
+  position: absolute;
+  width:4px;
+  height:4px;
+  border-radius: 50%;
+  left:50%;
+  top:50%;
+  margin-left:-2px;
+  margin-top:-2px;
+  background-color: #fff;
+}
+
+#desktop-right .function-bottom .function-bottom-delay{
+  display: flex;
+  align-items: center;
+  margin-left:10px;
+}
+
+#desktop-right .function-bottom .function-bottom-delay label{
+  height:32px;
+  line-height: 32px;
+  margin-right:6px;
+  margin-bottom:0;
+}
+
+#desktop-right .function-bottom .function-bottom-delay input{
+  height:32px;
+  outline: none;
+  border: none;
+  width:120px;
+  border-radius: 3px;
+  padding: 0 4px;
+}
 
