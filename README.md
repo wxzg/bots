@@ -197,19 +197,18 @@ function findChange() {
 findChange()
 ```
 
-### 4.puppeteer
+## 4.puppeteer
+
+### 4.1  Page
+
+- **page.$$eval** 相当于 Array.from(document.querySelectorAll(selector)) 返回所有选中元素的数组，并可在回调函数中进行处理
+
+```javascript
+const divCount = await page.$$eval('div', divs => divs.length);
+```
 
 
 
-## 额外补充
+- 
 
-### 1.字体颜色参考
 
-249,198,203 背景粉
-249,206,213 背景淡粉
-226,171,177 字体粉
-251,241,240 按钮淡淡粉
-254,144,157 按钮背景红
-105,105,105 字体黑
-203,203,203 字体灰
-240,98,111 背景红
