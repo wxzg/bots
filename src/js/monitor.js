@@ -2,20 +2,6 @@ const axios = require('axios-https-proxy-fix')
 const $ = require('cheerio')
 const request = require('request-promise')
 const btn = document.getElementById('monitorBtn')
-const tunnel = require('tunnel')
-
-btn.onclick = function () {
-    btn.classList.toggle("btn-success")
-    btn.classList.toggle("btn-danger")
-    if (btn.classList.contains('btn-success')) {
-        btn.innerHTML = '开始监听'
-        
-    } else {
-        btn.innerHTML = '停止监听'
-        getPageContents()
-    }
-
-}
 
 //请求获取目标页面
 async function getPageContents() {

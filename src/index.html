@@ -70,19 +70,45 @@
       </header>
 
       <!-- 任务界面 -->
-      <div id="task-page">
+      <div id="task-page" style="display: none;">
 
         <div class="task-state">
-          <div class="groupoverview">
-            <span>Group Overview</span>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+          <div class="group-overview">
+            <span class="group-title">Group Overview</span>
+            <ul class="group-state-ul">
+              <li>
+                <div class="task-num" style="color:#62606F">
+                  0
+                </div>
+                <span class="state">Running</span>
+              </li>
+              <li>
+                <div class="task-num" style="color:#DF8F71">
+                  0
+                </div>
+                <span class="state">Queued</span>
+              </li>
+              <li>
+                <div class="task-num" style="color:#DF8F71">
+                  0
+                </div>
+                <span class="state">Carted</span>
+              </li>
+              <li>
+                <div class="task-num" style="color:#8FBB87">
+                  0
+                </div>
+                <span class="state">Successful</span>
+              </li>
+              <li>
+                <div class="task-num" style="color:#DF4D57">
+                  0
+                </div>
+                <span class="state">Failed</span>
+              </li>
             </ul>
           </div>
+
         </div>
 
         <div class="task-interface">

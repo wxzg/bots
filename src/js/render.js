@@ -9,4 +9,3 @@ minWin.onclick = () => {
 closeWin.onclick = () => {
     ipcRenderer.send('close-app')
 }
-

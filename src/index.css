@@ -227,12 +227,68 @@ body {
   display:flex;
 }
 
+/* 任务模块状态栏和商品信息 */
 #desktop-right #task-page .task-state{
   width:180px;
   height:100%;
   background-color: #FFDFE4;
 }
 
+#desktop-right #task-page .task-state .group-overview{
+  margin-top:5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#desktop-right #task-page .task-state span.group-title{
+  font-weight: bold;
+  color:#fff;
+  position: relative;
+  font-size:20px;
+  margin-bottom:16px;
+}
+
+#desktop-right #task-page .task-state span.group-title:after{
+  content:'';
+  width:30px;
+  display: block;
+  position: absolute;
+  height:4px;
+  border-radius: 2px;
+  background-color: #DB4F58;
+  left:0;
+  bottom:-4px;
+}
+
+#desktop-right #task-page .task-state .group-overview .group-state-ul li{
+  margin-top:8px;
+}
+
+#desktop-right #task-page .task-state .group-overview .group-state-ul div.task-num{
+  display: inline-block;
+  vertical-align: middle;
+  width:32px;
+  height:24px;
+  border:.5px solid #fff;
+  background-color: #FEF4F5;
+  text-align: center;
+  font-size:14px;
+  font-weight: bold;
+  border-radius: 4px;
+  line-height: 24px;
+}
+
+#desktop-right #task-page .task-state .group-overview .group-state-ul span.state{
+  display: inline-block;
+  vertical-align: middle;
+  font-size:15px;
+  color:#C7A2AC;
+  font-family: Microsoft YaHei;
+  margin-left: 6px;
+}
+
+/* 任务模块显示界面 */
 #desktop-right #task-page .task-interface{
   flex:1;
   height:100%;
