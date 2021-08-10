@@ -18,16 +18,31 @@ const task = document.querySelector('.task-page-wrap')
 const profile = document.querySelector('.profile-page-wrap')
 const proxy = document.querySelector('.proxy-page-wrap')
 const login = document.querySelector('.login-page-wrap')
+const chart = document.querySelector('.chart-page-wrap')
 
 const task_btn = document.querySelector('.task-btn')
 const profile_btn = document.querySelector('.profile-btn')
 const proxy_btn = document.querySelector('.proxy-btn')
 const login_btn = document.querySelector('.login-btn')
+const chart_btn = document.querySelector('.chart-btn')
 
 const title = document.querySelector('.title')
 
+
+
+//chart界面
+chart_btn.onclick = function(){
+    chart.style.display = "flex"
+    task.style.display = "none"
+    profile.style.display = "none"
+    proxy.style.display = "none"
+    login.style.display = "none"
+    title.innerHTML = "Dashboard"
+}
+
 //task界面
 task_btn.onclick = function(){
+    chart.style.display = "none"
     task.style.display = "flex"
     profile.style.display = "none"
     proxy.style.display = "none"
@@ -37,6 +52,7 @@ task_btn.onclick = function(){
 
 //profile界面
 profile_btn.onclick = function(){
+    chart.style.display = "none"
     task.style.display = "none"
     profile.style.display = "flex"
     proxy.style.display = "none"
@@ -46,6 +62,7 @@ profile_btn.onclick = function(){
 
 //proxy界面
 proxy_btn.onclick = function(){
+    chart.style.display = "none"
     task.style.display = "none"
     profile.style.display = "none"
     proxy.style.display = "flex"
@@ -55,6 +72,7 @@ proxy_btn.onclick = function(){
 
 //用户login界面
 login_btn.onclick = function(){
+    chart.style.display = "none"
     task.style.display = "none"
     profile.style.display = "none"
     proxy.style.display = "none"

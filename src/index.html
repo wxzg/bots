@@ -11,9 +11,14 @@
     <!-- 左侧导航栏 -->
     <div id="desktop-side">
       <div id="logo">
-        <img class="side-image task-btn" src="../static/images/logo.svg" alt="task" style="width:32px;height:32px;">
+        <img class="side-image" src="../static/images/logo.svg" alt="task" style="width:32px;height:32px;">
       </div>
       <ul class="desktop-side-ul">
+
+        <li>
+          <img class="side-image chart-btn" src="../static/images/statistics.svg" alt="task" style="width:30px;height:30px;">
+        </li>
+
         <li>
           <img class="side-image task-btn" src="../static/images/task.svg" alt="task" style="width:30px;height:30px;">
         </li>
@@ -30,9 +35,6 @@
           <img class="side-image login-btn" src="../static/images/user.svg" alt="task" style="width:25px;height:25px;">
         </li>
 
-        <li>
-          <img class="side-image" src="../static/images/statistics.svg" alt="task" style="width:30px;height:30px;">
-        </li>
       </ul>
       <div class="side-bottom">
         <div class="setting">
@@ -72,7 +74,7 @@
       </header>
 
       <!-- Task 界面 -->
-      <div class="page task-page-wrap" >
+      <div class="page task-page-wrap" style="display: none;">
 
         <!-- 顶部功能栏 -->
         <div class="function-top">
@@ -384,6 +386,11 @@
 
       </div>
 
+      <!-- 图表界面 -->
+      <div class="page chart-page-wrap">
+        <div id="siteStatistic" style="width: 800px;height:400px;"></div>
+      </div>
+
       <!-- 底部导航栏 -->
       <footer class="desktop-footer">
         <div class="footer-version">
@@ -404,6 +411,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.from,Promise,Symbol,Object.setPrototypeOf,Object.getOwnPropertySymbols,Set"></script>
     <script src="./js/render.js"></script>
     <script src="./js/ubiq.js"></script>
+    <script src="./api/chart/allSiteChart.js"></script>
     <!-- <script src="./js/monitor.js"></script> -->
     <!-- <script src="./js/kith.js"></script> -->
   </body>

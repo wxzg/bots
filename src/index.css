@@ -435,4 +435,15 @@ body {
   padding: 0 4px;
 }
 
+/* 图标统计界面 */
+
+.chart-page-wrap{
+  position: relative;
+}
+
+.chart-page-wrap #siteStatistic{
+  position: absolute;
+  bottom:0;
+  left:0;
+}
 
