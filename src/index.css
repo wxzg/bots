@@ -222,26 +222,32 @@ body {
 
 /* 任务模块界面 */
 
-#desktop-right #task-page{
+#desktop-right .page{
+  flex:1;
+  flex-direction: column;
+  display:flex;
+}
+
+#desktop-right .page .function-top{
   flex:1;
   display:flex;
 }
 
 /* 任务模块状态栏和商品信息 */
-#desktop-right #task-page .task-state{
+#desktop-right .page .function-top .task-state{
   width:180px;
   height:100%;
   background-color: #FFDFE4;
 }
 
-#desktop-right #task-page .task-state .group-overview{
+#desktop-right .page .function-top .task-state .group-overview{
   margin-top:5px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#desktop-right #task-page .task-state span.group-title{
+#desktop-right .page .function-top  .task-state span.group-title{
   font-weight: bold;
   color:#fff;
   position: relative;
@@ -249,7 +255,7 @@ body {
   margin-bottom:16px;
 }
 
-#desktop-right #task-page .task-state span.group-title:after{
+#desktop-right .page  .function-top .task-state span.group-title:after{
   content:'';
   width:30px;
   display: block;
@@ -261,11 +267,11 @@ body {
   bottom:-4px;
 }
 
-#desktop-right #task-page .task-state .group-overview .group-state-ul li{
+#desktop-right .page .function-top .task-state .group-overview .group-state-ul li{
   margin-top:8px;
 }
 
-#desktop-right #task-page .task-state .group-overview .group-state-ul div.task-num{
+#desktop-right .page  .function-top .task-state .group-overview .group-state-ul div.task-num{
   display: inline-block;
   vertical-align: middle;
   width:32px;
@@ -279,7 +285,7 @@ body {
   line-height: 24px;
 }
 
-#desktop-right #task-page .task-state .group-overview .group-state-ul span.state{
+#desktop-right .page .function-top .task-state .group-overview .group-state-ul span.state{
   display: inline-block;
   vertical-align: middle;
   font-size:15px;
@@ -289,7 +295,7 @@ body {
 }
 
 /* 任务模块显示界面 */
-#desktop-right #task-page .task-interface{
+#desktop-right .page .function-top .task-interface{
   flex:1;
   height:100%;
   background-color: #FFDFE4;
@@ -297,20 +303,20 @@ body {
   flex-direction: column;
 }
 
-#desktop-right #task-page .task-interface .task-interface-pagewrap{
+#desktop-right .page .function-top .task-interface .task-interface-pagewrap{
   height:8%;
   background-color: #FEF4F5;
   width: 100%;
 }
 
-#desktop-right #task-page .task-interface .task-page{
+#desktop-right .page .function-top .task-interface .task-page{
   flex:1;
   background-color: #fff;
   border-bottom-left-radius: 5px;
   width:100%;
 }
 
-#desktop-right #task-page .task-interface .task-page .no-task{
+#desktop-right .page .function-top .task-interface .task-page .no-task{
   color:#C7A2AC;
   font-size:15px;
   width:100%;
@@ -335,36 +341,36 @@ body {
 }
 
 #desktop-right .function-bottom .function-icon{
-  width:60px;
-  height:60px;
+  width:54px;
+  height:54px;
   border-radius: 50%;
   position: absolute;
-  top:-5px; 
+  top:-2px; 
 }
 
 
 
 #desktop-right .function-bottom .function-icon .function-icon-circle{
-  width:52px;
-  height:52px;
+  width:46px;
+  height:46px;
   background-color: #FEEBEF;
   border-radius: 50%;
   position: absolute;
   left:50%;
   top:50%;
-  margin-left:-26px;
-  margin-top:-26px;
+  margin-left:-23px;
+  margin-top:-23px;
 }
 
 
 #desktop-right .function-bottom .function-icon .function-icon-circle img{
   position: absolute;
   left:50%;
-  margin-left: -15px;
+  margin-left: -12px;
   top:50%;
-  margin-top:-15px;
-  width:30px;
-  height:30px;
+  margin-top:-12px;
+  width:24px;
+  height:24px;
 }
 
 #desktop-right .function-bottom .function-bottom-captcha{
@@ -428,4 +434,5 @@ body {
   border-radius: 3px;
   padding: 0 4px;
 }
+
 

@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>ZQAIO</title>
-    <link rel="stylesheet" href="../static/bootstarp/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/bootstarp/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="index.css">
   </head>
   <body >
@@ -12,22 +10,24 @@
 
     <!-- 左侧导航栏 -->
     <div id="desktop-side">
-      <div id="logo">Cop</div>
+      <div id="logo">
+        <img class="side-image task-btn" src="../static/images/logo.svg" alt="task" style="width:32px;height:32px;">
+      </div>
       <ul class="desktop-side-ul">
         <li>
-          <img class="side-image" src="../static/images/task.svg" alt="task" style="width:30px;height:30px;">
+          <img class="side-image task-btn" src="../static/images/task.svg" alt="task" style="width:30px;height:30px;">
+        </li>
+
+        <li >
+          <img class="side-image profile-btn" src="../static/images/profile.svg" alt="task" style="width:28px;height:28px;">
         </li>
 
         <li>
-          <img class="side-image" src="../static/images/profile.svg" alt="task" style="width:28px;height:28px;">
+          <img class="side-image proxy-btn" src="../static/images/wifi.svg" alt="task">
         </li>
 
         <li>
-          <img class="side-image" src="../static/images/wifi.svg" alt="task">
-        </li>
-
-        <li>
-          <img class="side-image" src="../static/images/user.svg" alt="task" style="width:25px;height:25px;">
+          <img class="side-image login-btn" src="../static/images/user.svg" alt="task" style="width:25px;height:25px;">
         </li>
 
         <li>
@@ -46,6 +46,7 @@
 
     <!-- 右侧UI -->
     <div id="desktop-right">
+
       <!-- 标题栏 -->
       <header class="desktop-header">
         <div class="header-title">
@@ -61,7 +62,7 @@
         </div>
         <div class="header-rightset">
           <div class="notification">
-            <img class="side-image" src="../static/images/information.svg" alt="task">
+            <img class="side-image" src="../static/images/information.svg" alt="information" style="margin-top: 18px;">
           </div>
           <div class="header-icon-wrap">
             <i class="min-win win-icon" style="background-color: #BBA5AD;"></i>
@@ -70,116 +71,315 @@
         </div>
       </header>
 
-      <!-- 任务界面 -->
-      <div id="task-page">
+      <!-- Task 界面 -->
+      <div class="page task-page-wrap" >
 
-        <div class="task-state">
-          <div class="group-overview">
-            <span class="group-title">Group Overview</span>
-            <ul class="group-state-ul">
-              <li>
-                <div class="task-num" style="color:#62606F">
-                  0
-                </div>
-                <span class="state">Running</span>
-              </li>
-              <li>
-                <div class="task-num" style="color:#DF8F71">
-                  0
-                </div>
-                <span class="state">Queued</span>
-              </li>
-              <li>
-                <div class="task-num" style="color:#DF8F71">
-                  0
-                </div>
-                <span class="state">Carted</span>
-              </li>
-              <li>
-                <div class="task-num" style="color:#8FBB87">
-                  0
-                </div>
-                <span class="state">Successful</span>
-              </li>
-              <li>
-                <div class="task-num" style="color:#DF4D57">
-                  0
-                </div>
-                <span class="state">Failed</span>
-              </li>
-            </ul>
+        <!-- 顶部功能栏 -->
+        <div class="function-top">
+
+          <div class="task-state">
+            <div class="group-overview">
+              <span class="group-title">Group Overview</span>
+              <ul class="group-state-ul">
+                <li>
+                  <div class="task-num" style="color:#62606F">
+                    0
+                  </div>
+                  <span class="state">Running</span>
+                </li>
+                <li>
+                  <div class="task-num" style="color:#DF8F71">
+                    0
+                  </div>
+                  <span class="state">Queued</span>
+                </li>
+                <li>
+                  <div class="task-num" style="color:#DF8F71">
+                    0
+                  </div>
+                  <span class="state">Carted</span>
+                </li>
+                <li>
+                  <div class="task-num" style="color:#8FBB87">
+                    0
+                  </div>
+                  <span class="state">Successful</span>
+                </li>
+                <li>
+                  <div class="task-num" style="color:#DF4D57">
+                    0
+                  </div>
+                  <span class="state">Failed</span>
+                </li>
+              </ul>
+            </div>
+  
           </div>
+  
+          <div class="task-interface">
+  
+            <div class="task-interface-pagewrap">
+  
+            </div>
+  
+            <div class="task-page">
+  
+              <div class="no-task">
+                <p style="font-size: 20px;">Your tasks go here</p>
+                <p>Click the + on the bottom to get started!</p>
+              </div>
+            </div>
+  
+          </div> 
 
         </div>
 
-        <div class="task-interface">
-
-          <div class="task-interface-pagewrap">
-
+        <!-- 底部功能栏 -->
+        <div class="function-bottom">
+  
+          <button class="function-bottom-captcha">
+            <div class="captcha-state">
+              <div></div>
+            </div>
+            Captcha
+          </button>
+  
+          <div class="function-bottom-delay">
+            <label for="delay">SHOPIFY DELAY </label>
+            <input type="text" placeholder="2000" id="delay">
           </div>
-
-          <div class="task-page">
-
-            <div class="no-task">
-              <p style="font-size: 20px;">Your tasks go here</p>
-              <p>Click the + on the bottom to get started!</p>
+  
+          <div class="function-icon" style="right:420px; background-color: #8FBB87;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/start.svg" alt="task" style="margin-left:-10px">
             </div>
           </div>
-
+          <div class="function-icon" style="right:340px; background-color: #DF8F71;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/stop.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:260px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/add.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:180px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/duplicate.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:100px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/edit.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:20px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/delete.svg" alt="task">
+            </div>
+          </div>
+  
         </div>
 
       </div>
 
-      <!-- 底部功能栏 -->
-      <div class="function-bottom">
+      <!-- Profile 界面 -->
+      <div class="page profile-page-wrap" style="display: none;">
 
-        <button class="function-bottom-captcha">
-          <div class="captcha-state">
-            <div></div>
-          </div>
-          Captcha
-        </button>
+        <div class="function-top">
 
-        <div class="function-bottom-delay">
-          <label for="delay">SHOPIFY DELAY </label>
-          <input type="text" placeholder="2000" id="delay">
+
+          <div class="task-interface">
+  
+            <div class="task-interface-pagewrap">
+  
+            </div>
+  
+            <div class="task-page">
+  
+              <div class="no-task">
+                <p style="font-size: 20px;">Your Profiles go here</p>
+                <p>Click the + on the bottom right to get started!</p>
+              </div>
+            </div>
+  
+          </div> 
+
         </div>
 
-        <div class="function-icon" style="right:420px; background-color: #8FBB87;">
-          <div class="function-icon-circle">
-
-            <img class="side-image" src="../static/images/start.svg" alt="task" style="margin-left:-13px">
+        <!-- 底部功能栏 -->
+        <div class="function-bottom">
+  
+          <button class="function-bottom-captcha">
+            <div class="captcha-state">
+              <div></div>
+            </div>
+            Captcha
+          </button>
+  
+          <div class="function-bottom-delay">
+            <label for="delay">SHOPIFY DELAY </label>
+            <input type="text" placeholder="2000" id="delay">
           </div>
+  
+          <div class="function-icon" style="right:260px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/add.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:180px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/duplicate.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:100px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/edit.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:20px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/delete.svg" alt="task">
+            </div>
+          </div>
+  
         </div>
-        <div class="function-icon" style="right:340px; background-color: #DF8F71;">
-          <div class="function-icon-circle">
 
-            <img class="side-image" src="../static/images/stop.svg" alt="task">
-          </div>
+      </div>
+      
+      <!-- Proxy 界面 -->
+      <div class="page proxy-page-wrap" style="display: none;">
+
+        <div class="function-top">
+
+
+          <div class="task-interface">
+  
+            <div class="task-interface-pagewrap">
+  
+            </div>
+  
+            <div class="task-page">
+  
+              <div class="no-task">
+                <p style="font-size: 20px;">Your Proxies go here</p>
+                <p>Click the + above to create a Proxy group</p>
+              </div>
+            </div>
+  
+          </div> 
+
         </div>
-        <div class="function-icon" style="right:260px; background-color: #F3CCDA;">
-          <div class="function-icon-circle">
 
-            <img class="side-image" src="../static/images/add.svg" alt="task">
+        <!-- 底部功能栏 -->
+        <div class="function-bottom">
+  
+          <button class="function-bottom-captcha">
+            <div class="captcha-state">
+              <div></div>
+            </div>
+            Captcha
+          </button>
+  
+          <div class="function-bottom-delay">
+            <label for="delay">SHOPIFY DELAY </label>
+            <input type="text" placeholder="2000" id="delay">
           </div>
+  
+
+          <div class="function-icon" style="right:180px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/delete_bad.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:100px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/delete.svg" alt="task">
+            </div>
+          </div>
+          <div class="function-icon" style="right:20px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/add.svg" alt="task">
+            </div>
+          </div>
+  
         </div>
-        <div class="function-icon" style="right:180px; background-color: #F3CCDA;">
-          <div class="function-icon-circle">
 
-            <img class="side-image" src="../static/images/duplicate.svg" alt="task">
-          </div>
+      </div>
+
+      <!-- Login 界面 -->
+      <div class="page login-page-wrap" style="display: none;">
+
+        <div class="function-top">
+
+          <div class="task-interface">
+  
+            <div class="task-interface-pagewrap">
+  
+            </div>
+  
+            <div class="task-page">
+  
+              <div class="no-task">
+                <p style="font-size: 20px;">Your Login go here</p>
+                <p>Click the + on the bottom right to get started!</p>
+              </div>
+
+            </div>
+  
+          </div> 
+
         </div>
-        <div class="function-icon" style="right:100px; background-color: #F3CCDA;">
-          <div class="function-icon-circle">
 
-            <img class="side-image" src="../static/images/edit.svg" alt="task">
+        <!-- 底部功能栏 -->
+        <div class="function-bottom">
+  
+          <button class="function-bottom-captcha">
+            <div class="captcha-state">
+              <div></div>
+            </div>
+            Captcha
+          </button>
+  
+          <div class="function-bottom-delay">
+            <label for="delay">SHOPIFY DELAY </label>
+            <input type="text" placeholder="2000" id="delay">
           </div>
-        </div>
-        <div class="function-icon" style="right:20px; background-color: #F3CCDA;">
-          <div class="function-icon-circle">
+  
+          <div class="function-icon" style="right:180px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/edit.svg" alt="task">
+            </div>
+          </div>
 
-            <img class="side-image" src="../static/images/delete.svg" alt="task">
+          <div class="function-icon" style="right:100px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/delete.svg" alt="task">
+            </div>
           </div>
+          <div class="function-icon" style="right:20px; background-color: #F3CCDA;">
+            <div class="function-icon-circle">
+  
+              <img class="side-image" src="../static/images/add.svg" alt="task">
+            </div>
+          </div>
+  
         </div>
 
       </div>
@@ -205,6 +405,6 @@
     <script src="./js/render.js"></script>
     <script src="./js/ubiq.js"></script>
     <!-- <script src="./js/monitor.js"></script> -->
-    <script src="./js/kith.js"></script>
+    <!-- <script src="./js/kith.js"></script> -->
   </body>
 </html>
