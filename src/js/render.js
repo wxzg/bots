@@ -13,6 +13,10 @@ closeWin.onclick = () => {
 }
 
 
+//右下角时间
+const time = document.querySelector("#time")
+setInterval("time.innerHTML=new Date().toLocaleString()+'  星期'+'日一二三四五六'.charAt(new Date().getDay());",1000)
+
 //左侧导航栏按钮,右侧功能界面切换
 const task = document.querySelector('.task-page-wrap')
 const profile = document.querySelector('.profile-page-wrap')
@@ -37,7 +41,7 @@ chart_btn.onclick = function(){
     profile.style.display = "none"
     proxy.style.display = "none"
     login.style.display = "none"
-    title.innerHTML = "Dashboard"
+    title.innerHTML = "DashBoard"
 }
 
 //task界面

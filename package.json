@@ -47,7 +47,10 @@
     "cheerio": "^1.0.0-rc.10",
     "echarts": "^5.1.2",
     "electron-squirrel-startup": "^1.0.0",
+    "nodemailer": "^6.6.3",
+    "proxy-chain": "^1.0.3",
     "puppeteer": "^10.1.0",
+    "puppeteer-page-proxy": "^1.2.8",
     "request": "^2.88.2",
     "request-promise": "^4.2.6"
   },

@@ -7,7 +7,7 @@ const btn = document.getElementById('monitorBtn')
 async function getPageContents() {
     
     const option = {
-        url:'https://www.atmosusa.com/collections/adidas',
+        url:'https://www.yeezysupply.com/',
         // method:'get',
         // proxy: {
             //     host: '43.92.71.52',

@@ -52,11 +52,10 @@
       <!-- 标题栏 -->
       <header class="desktop-header">
         <div class="header-title">
-          <span class="title">Tasks</span>
-          <span class="total">(0/0) Total</span>
+          <span class="title">DashBoard</span>
         </div>
         <div class="searchipt">
-          <input type="text" placeholder="Search"/>
+          <input type="text" placeholder="Search" />
         </div>
         <div class="header-btn">
           <button class="import-btn">Import</button>
@@ -64,7 +63,7 @@
         </div>
         <div class="header-rightset">
           <div class="notification">
-            <img class="side-image" src="../static/images/information.svg" alt="information" style="margin-top: 18px;">
+            <img class="side-image" src="../static/images/information.svg" alt="information" style="margin-top: 24px;">
           </div>
           <div class="header-icon-wrap">
             <i class="min-win win-icon" style="background-color: #BBA5AD;"></i>
@@ -388,7 +387,10 @@
 
       <!-- 图表界面 -->
       <div class="page chart-page-wrap">
-        <div id="siteStatistic" style="width: 800px;height:400px;"></div>
+
+        <div class="site-wrap">
+          <div id="siteStatistic" style="width: 450px;height:320px;"></div>
+        </div>
       </div>
 
       <!-- 底部导航栏 -->
@@ -402,6 +404,8 @@
           <i class="win-icon" style="margin:0 8px; background-color: #DE4D59;"></i>
           <span>AYCD Autosolve Connected</span>
         </div>
+
+        <div id="time"></div>
       </footer>
 
     </div>
@@ -412,7 +416,8 @@
     <script src="./js/render.js"></script>
     <script src="./js/ubiq.js"></script>
     <script src="./api/chart/allSiteChart.js"></script>
-    <!-- <script src="./js/monitor.js"></script> -->
-    <!-- <script src="./js/kith.js"></script> -->
+    <script src="./api/chart/statistic.js"></script>
+    <script type="module" src="./tools/captcha.js"></script>
+    <script type="module" src="./js/kith.js"></script>
   </body>
 </html>
