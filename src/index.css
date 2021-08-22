@@ -444,13 +444,19 @@ body {
 
 /* 图标统计界面 */
 
-.chart-page-wrap{
-  position: relative;
+#desktop-right div.chart-page-wrap{
+  flex:1;
   display: flex;
+  justify-content: space-between;
 }
 
-.chart-page-wrap  .site-wrap{
+#desktop-right .chart-page-wrap  .site-wrap{
   flex:1;
-  width:33%;
 }
+
+#desktop-right .chart-page-wrap  .calendar-wrap{
+  flex:1;
+
+}
+
 

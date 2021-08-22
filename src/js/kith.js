@@ -1,10 +1,17 @@
 const puppeteer = require('puppeteer')
-//const solveCaptcha = require('../tools/captcha');
 const proxyChain = require('proxy-chain')
 const useProxy = require('puppeteer-page-proxy')
 
 import solveCaptcha from '../tools/captcha.js';
 
+
+const card = {
+  cardNumber: '4859530199510780',
+  nameOnCard: 'Maxcard',
+  expirationMonth: '4',
+  expirationYear: '2024',
+  securityCode: '64'
+}
 
 const shippingAddress =  {
   first_name:'Kcpro',
@@ -120,13 +127,7 @@ async function checkouts({
     let hasCaptcha = false;
     let checkoutComplete = false;
 
-    let cardDetails = {
-      cardNumber: 4859530199510780,
-      nameOnCard: 'Maxcard',
-      expirationMonth: 4,
-      expirationYear: 2024,
-      securityCode: 64
-    };
+    let cardDetails = card;
     
     // if (cardFriendlyName) {
     //   cardDetails = getCardDetailsByFriendlyName(cardFriendlyName);
@@ -364,4 +365,4 @@ async function enterAddressDetails({ page, address, type }) {
   }
 }
 
-testPuppeteer(productInfo)
+//testPuppeteer(productInfo)
